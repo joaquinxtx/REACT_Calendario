@@ -53,21 +53,21 @@ const bgSyncPlugin = new BackgroundSyncPlugin('posteos-offline', {
 
 
 registerRoute(
-    new RegExp('http://localhost:4000/api/events'),
+    new RegExp('https://backend-calendario-production.up.railway.app/api/events'),
     new NetworkOnly({
         plugins: [ bgSyncPlugin ]
     }),
     'POST'
 )
 registerRoute(
-    new RegExp('http://localhost:4000/api/events/'),
+    new RegExp('https://backend-calendario-production.up.railway.app/api/events/'),
     new NetworkOnly({
         plugins: [ bgSyncPlugin ]
     }),
     'PUT'
 )
 registerRoute(
-    new RegExp('http://localhost:4000/api/events/'),
+    new RegExp('https://backend-calendario-production.up.railway.app/api/events/'),
     new NetworkOnly({
         plugins: [ bgSyncPlugin ]
     }),
